@@ -1,0 +1,119 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+    color: white;
+
+}
+#container{
+    width:100%;
+    height:1000px;
+    background-image:url("https://www.shutterstock.com/image-vector/abstract-halftone-blue-background-shapes-600nw-2074348912.jpg") ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+#heading{
+    color: white;
+    text-transform: capitalize;
+    position: absolute;
+    top:550px;
+    left:20px;
+    font-size:70px;
+    /* animation */
+    -webkit-animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in-expand-fwd 0.8s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+/* animation class */
+@-webkit-keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  @keyframes tracking-in-expand-fwd {
+    0% {
+      letter-spacing: -0.5em;
+      -webkit-transform: translateZ(-700px);
+              transform: translateZ(-700px);
+      opacity: 0;
+    }
+    40% {
+      opacity: 0.6;
+    }
+    100% {
+      -webkit-transform: translateZ(0);
+              transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  #main1{
+    width:60%;
+    height: 500px;
+    /* border:1px black solid; */
+    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    25px 0px 20px -20px rgba(0,0,0,0.45),
+    0px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45); 
+    border-radius: 5px;
+    position: absolute;
+    top:70px;
+    left:30%;
+    background-image: url("https://media.istockphoto.com/id/1279933304/photo/sea-wave-abstract-navy-blue-black-neon-pattern-moon-light-silk-wavy-dark-texture-night-beach.webp?b=1&s=170667a&w=0&k=20&c=mJaf0oNsrg_lQsBlCQ88jQUS8TVWsVnjPK-0YZz-Vu4=");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    
+    /* background-color: rgb(13, 13, 45); */
+
+  }
+  #slidecontainer{
+    width:40%;
+    height: 400px;
+    position: absolute;
+    top:60px;
+    left:30%;
+    /* border:1px black solid; */
+    background-image: url("https://media.istockphoto.com/id/1157432768/photo/texture-of-old-navy-blue-paper-background-closeup-structure-of-dense-cardboard.webp?b=1&s=170667a&w=0&k=20&c=eq_Rg-Lvr9sBECdVetm9zBFX3V7Vy6H-Dgp7nzKwzcI=");
+    background-repeat: no-repeat;
+    background-size:100% 100%;
+    box-shadow: 0px -25px 20px -20px rgba(0,0,0,0.45),
+    25px 0px 20px -20px rgba(0,0,0,0.45),
+    0px 25px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45); 
+   
+  }
+  .min_slide,.max_slide{
+    position:absolute;
+    margin-left:99px;
+    width:50%;
+    pointer-events: none;
+    cursor: pointer;
+    /* -webkit-appearance: none; */
+  }
+  .fillrange{
+    width:50%;
+    height:30px;
+    margin-left: 20px;
+  }
+  #slidecontainer h3 ,h1{
+    margin-left: 20px;
+  }
+  .blank_slider{
+    width:22%;
+    height: 8px;
+    background-color: white;
+    border-radius: 3px;
+    margin-left: 20px;
+    position: absolute;
+    top:73%;
+  }
