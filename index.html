@@ -14,17 +14,23 @@
         <div id="main1">
             <div id="slidecontainer">
                 <h1>Filter product in your budget</h1><br><br>
+                <h3> Minimum Price:</h3><br>
+                <input type="number" class="fillrange" id="min" placeholder="2400"><br><br>
                 <h3> Maximum Price:</h3><br>
-                <input type="number" class="fillrange"><br><br>
-                <h3> Minimum Price:</h3> <br>
-                <input type="number" class="fillrange"><br><br>
-                <div class="blank_slider"></div>
-                <input type="range" min="1" max="100" value="20" class="min_slide" step="1">
-                <input type="range" min="1" max="100" value="50" class="max_slide" step="1">
+                <input type="number" class="fillrange" id="max" placeholder="8000"><br><br>
+                <div class="blankcontainer">
+                 <div class="blank_slider"></div>
+                </div>
+                <div class="range-input">
+                <input type="range" min="500" max="10000" value="2400" class="min_slide" step="1" id="one">
+                <input type="range" min="500" max="10000" value="8000" class="max_slide" step="1" id="two">
+                </div>
             </div>
         </div>
 
     </div>
+    <!-- <input type="number"> -->
+     <script src="script.js"></script>
 </body>
 
 </html>

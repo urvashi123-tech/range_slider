@@ -94,8 +94,13 @@
   }
   .min_slide,.max_slide{
     position:absolute;
-    margin-left:99px;
-    width:50%;
+    top:73%;
+    left:0px;
+    /* margin-left:99px; */
+    width:80%;
+    height: 8px;
+    background: transparent;
+    z-index: 1;
     pointer-events: none;
     cursor: pointer;
     /* -webkit-appearance: none; */
@@ -104,11 +109,54 @@
     width:50%;
     height:30px;
     margin-left: 20px;
+    color: black;
+    font-size: larger;
   }
   #slidecontainer h3 ,h1{
     margin-left: 20px;
   }
-  .blank_slider{
+  .blankcontainer{
+    width:85%;
+    height: 10px;
+    margin-left:3%;
+    position: relative;
+    background: #f5eded;
+    border-radius: 5px;
+  }
+  .blank_slider {
+    position: absolute;
+    /* width:50%; */
+    height:10px;
+    top:0px;
+    left: 20%;
+    right: 20%;
+    border-radius: 5px;
+    background: #2d6fa8;
+}
+.range-input{
+  position: relative;
+}
+.range-input input {
+  position: absolute;
+  width: 90%;
+  height: 5px;
+  background: none;
+  top: -5px;
+  pointer-events: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+}
+
+/* Styles for the range thumb in WebKit browsers */
+input[type="range"]::-webkit-slider-thumb {
+  height: 17px;
+  width: 17px;
+  border-radius: 70%;
+  background: #555;
+  pointer-events: auto;
+  -webkit-appearance: none;
+}
+  /* .blank_slider{
     width:22%;
     height: 8px;
     background-color: white;
@@ -116,4 +164,14 @@
     margin-left: 20px;
     position: absolute;
     top:73%;
-  }
+    top:0px;
+    left:0px;
+    z-index: 0;
+  } */
+  /* @media screen and (max-width:1032) {
+  #heading{
+    position: absolute;
+    top:650px;
+    left:20px;
+  }  
+  } */
